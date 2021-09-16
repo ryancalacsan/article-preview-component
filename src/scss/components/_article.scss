@@ -1,0 +1,63 @@
+@use "../abstracts/" as *;
+
+.article {
+    max-width: 327px;
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    &__img {
+        background-image: url(/images/drawers.jpg);
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+        background-position-y: 26%;
+        margin-bottom: 36px;
+    }
+    &__content {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    &__title {
+        color: $veryDarkGrayishBlue;
+        font-size: $font-md;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+    &__text {
+        color: $desaturatedDarkBlue;
+        line-height: 20px;
+        letter-spacing: 0.12px;
+        margin-bottom: 32px;
+    }
+    &__profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__avitar {
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 16px;
+    }
+    &__attribution {
+        line-height: 20px;
+        letter-spacing: 0.12px;
+    }
+
+    &__author {
+        color: $veryDarkGrayishBlue;
+    }
+    &__date {
+        color: $grayishBlue;
+    }
+    &__share {
+        margin-left: auto;
+        border: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: $lightGrayishBlue;
+    }
+}
