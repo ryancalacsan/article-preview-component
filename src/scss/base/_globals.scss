@@ -1,11 +1,14 @@
 @use "../abstracts/" as *;
+html,
+body {
+    height: 100%;
+}
 
 body {
     font-family: "Manrope", sans-serif;
     font-size: $font-sm;
     font-weight: $medium;
     background-color: $lightGrayishBlue;
-    padding-top: 74px;
 }
 
 h1,
@@ -16,4 +19,25 @@ h3 {
 
 p {
     margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#overlay {
+    position: fixed;
+    // opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+
+    &.active {
+        pointer-events: all;
+    }
 }
